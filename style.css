@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --white-button-color: rgba(254, 255, 251, 0.8);
+    --progress-bar-grey-color: rgb(189, 186, 186);
+    --progress-bar-red-color: red;
+
+   /* --progress-bar-grey-color: rgba(254, 255, 251, 0.8);
+    --progress-bar-red-color: blueviolet;*/
+    --font-family-open-sans: 'Open Sans';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: var(--font-family-open-sans);
+}
+
+video {
+    width: 100%;
+    z-index: 0;
+    object-fit: cover;
+
+}
+
+button {
+    all: unset;
+}
+
+select {
+    border: 2px solid red;
+}
+
+ul {
+    all: unset;
+    padding: 1px 3px 5px 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 2px;
+}
+
+li {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+li:hover {
+    background-color: grey;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: blueviolet;
+    padding: 5px;
+    width: 500px;
+    height: 250px;
+}
+
+.play_pause {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    left: 13px;
+    bottom: 15px;
+    z-index: 1;
+    background-color: var(--white-button-color);
+}
+
+#play_pause_icon {
+    width: 20px;
+}
+
+#progress_bar {
+    position: absolute;
+    width: 250px;
+    border-radius: 2px;
+    height: 7px;
+    background-color: var(--progress-bar-grey-color);
+    bottom: 30px;
+    left: 55px;
+    z-index: 1;
+}
+
+#progress_bar_red {
+    background-color: var(--progress-bar-red-color);
+    width: 0%;
+    border-radius: 2px;
+    height: 7px;
+    z-index: 1;
+}
+
+#current_time {
+    position: absolute;
+    bottom: 23px;
+    right: 158px;
+    display: flex;
+    z-index: 1;
+    font-size: smaller;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 2px 2px;
+}
+
+#sound {
+    position: absolute;
+    bottom: 22px;
+    right: 123px;
+    display: flex;
+    z-index: 1;
+    padding: 3px;
+    font-size: smaller;
+    background-color: var(--white-button-color);
+    border-radius: 15px;
+}
+
+#sound_icon,
+#settings_icon,
+#fullscreen_icon {
+    width: 18px;
+    padding: 2px;
+}
+
+#settings {
+    position: absolute;
+    bottom: 22px;
+    right: 50px;
+    display: flex;
+    z-index: 1;
+    padding: 3px;
+    font-size: smaller;
+    background-color: var(--white-button-color);
+    border-radius: 15px;
+}
+
+#fullscreen_button {
+    position: absolute;
+    bottom: 22px;
+    right: 15px;
+    display: flex;
+    z-index: 1;
+    padding: 3px;
+    font-size: smaller;
+    background-color: var(--white-button-color);
+    border-radius: 15px;
+}
+
+#video_quality {
+    position: absolute;
+    bottom: 55px;
+    right: 35px;
+    display: none;
+    z-index: 1;
+    padding: 3px;
+    font-size: smaller;
+    background-color: var(--white-button-color);
+    border-radius: 15px;
+    font-weight: 800;
+}
+
+#speed {
+    position: absolute;
+    bottom: 22px;
+    right: 87px;
+    width: 23px;
+    height: 23px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    padding: 3px;
+    font-size: 10px;
+    background-color: var(--white-button-color);
+    border-radius: 15px;
+}
+
+#speed_dialog {
+    position: absolute;
+    bottom: 55px;
+    right: 75px;
+    display: none;
+    z-index: 1;
+    padding: 3px;
+    font-size: smaller;
+    background-color: var(--white-button-color);
+    border-radius: 15px;
+    font-weight: 800;
+}
+.player_controller{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+   
+
+}
+.player_controller:hover{
+    opacity: 1;
+}
+

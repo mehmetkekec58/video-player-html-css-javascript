@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/50/000000/video.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="player_controller">
+        <button id="play_pause" class="play_pause">
+            <img id="play_pause_icon"/>
+        </button>
+        <div id="progress_bar">
+            <div id="progress_bar_red"></div>
+        </div>
+        <span id="current_time">00:00</span>
+        <button id="sound">
+            <img id="sound_icon"/>
+        </button>
+        <button id="speed">
+            1X
+        </button>
+        <button id="settings">
+            <img id="settings_icon"/>
+        </button>
+        <button id="fullscreen_button">
+            <img id="fullscreen_icon"/>
+        </button>
+        <div id="video_quality">
+            <ul>
+                <li>360p</li>
+                <li>480p</li>
+                <li>720p</li>
+                <li>1080p</li>
+            </ul>
+        </div>
+        <div id="speed_dialog">
+            <ul id="speed_ul">
+                <li>0.25X</li>
+                <li>0.5X</li>
+                <li>1X</li>
+                <li>1.5X</li>
+                <li>2X</li>
+            </ul>
+        </div>
+    </div>
+        <video id="video"></video>
+    </div>
+
+    
+</body>
+
+</html>
